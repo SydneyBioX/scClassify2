@@ -1,0 +1,10 @@
+CD14+ monocyte:4
+Dendritic cell:2
+Cytotoxic T cell:3
+CD16+ monocyte:4
+Plasmacytoid dendritic cell:2
+B cell:3
+Natural killer cell:3
+CD4+ T cell:3
+Megakaryocyte:5
+Unassigned:1
