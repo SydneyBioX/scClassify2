@@ -9,6 +9,8 @@ We proposed scClassify2, a novel framework for adjacent cell state identificatio
 
 (3)   we utilise log-ratio of expression values to capture the relationship between two genes. The log-ratio is shown to be more stable and hence more generalisable across datasets compared to individual gene expression.  
 
+The network architecture is:
+![](https://github.com/Wenze18/scClassify2/blob/main/network_architecture.png)
 
 ## Table of Contents
 
@@ -42,7 +44,7 @@ To provide a resource for the scientific community, we developed a user-friendly
 
 scClassify-catalogue directly delivers annotation results for the selected tissue within a relatively short time. The input of scClassify-catalogue is flexible and allows either the direct output from 10x cellranger software, or a csv file or h5ad file containing the gene expression matrix. Once the job is submitted, a job ID will be made available. A file containing the predicted outcome as well as an HTML file will be emailed to the email address entered by the user once the job finishes. The HTML file visualises the predicted cell type such that the user can easily check the prediction result.   
 
-![]()
+![](https://github.com/Wenze18/scClassify2/blob/main/Server.png)
 
 ## Citation
 
