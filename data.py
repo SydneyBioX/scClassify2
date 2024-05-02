@@ -1,7 +1,7 @@
 import scanpy as sc, numpy as np, pandas as pd, anndata as ad
 
 
-def prepare_data(data_path): 
+def prepare_data(data_path, care): 
     #### read raw data
     adata = sc.read(data_path)
     data=adata
