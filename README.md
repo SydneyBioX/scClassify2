@@ -27,6 +27,11 @@ conda create --name <env> --file environment.yaml
 conda activate <env>
 ~~~
 
+Note, you might add conda-forge into your channel list by
+~~~shell
+conda config --add channels conda-forge
+~~~
+
 Once success, you have the right environment to use scClassify2.  
 Before actual training process, you need to change some paths of input files. You can either go into the main.py file to change arguments in lines
 ~~~
