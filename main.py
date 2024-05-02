@@ -8,7 +8,7 @@ from torchviz import make_dot
 import scanpy as sc, numpy as np, pandas as pd, anndata as ad
 import logging
 import time
-from data import prepare_data, label_dict
+from data import prepare_data
 from utils import Data_using, get_prediction
 from model import scMPNN
 from loss_function import CornLoss, SinkhornDistance
