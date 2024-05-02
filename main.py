@@ -25,13 +25,12 @@ def main(args):
     batch_size = args.batch_size
     n_epoch = 28
 
-    # load data into dataloader
-    var_mata, using_data, train_set, validation_set, gene_dict = prepare_data(args.trainset_path)
-    
     # load data label
     with open(args.label_path,'r') as f0:
         care=json.load(f0)
     label_dict={k:i for (i,k) in enumerate(care)}
+    # load data into dataloader
+    var_mata, using_data, train_set, validation_set, gene_dict = prepare_data(args.trainset_path, care)
     
     for fold in range(len(validation_set)):
         train_data_use=train_set[fold].X.toarray()
