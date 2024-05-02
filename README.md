@@ -23,13 +23,20 @@ The network architecture is:
 To correctly use **scClassify2** via your local device, we suggest first create a conda environment by:
 
 ~~~shell
-conda create --name <env> --file environment.yaml
+conda create -n <env> python=3.9
 conda activate <env>
+conda install -c conda-forge anndata
+conda install -c conda-forge scanpy
+conda install pytorch torchvision torchaudio pytorch-cuda -c pytorch -c nvidia
+pip install wandb
+pip install torchviz
+pip install --user scikit-misc
 ~~~
 
-Note, you might add conda-forge into your channel list by
+Note, as we tested on different platforms, sometimes you may need to reinstall h5py package by:
 ~~~shell
-conda config --add channels conda-forge
+pip uninstall h5py
+pip install h5py
 ~~~
 
 Once success, you have the right environment to use scClassify2.  
