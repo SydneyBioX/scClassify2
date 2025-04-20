@@ -24,8 +24,8 @@ The network architecture is:
 To correctly use **scClassify2** via your local device, we suggest first create a conda environment by:
 
 ~~~shell
-conda create -n <env> python=3.9
-conda activate <env>
+conda create -n scclassify2 python=3.9
+conda activate scclassify2
 conda install -c conda-forge anndata
 conda install -c conda-forge scanpy
 conda install pytorch torchvision torchaudio pytorch-cuda -c pytorch -c nvidia
@@ -55,7 +55,19 @@ python main.py --trainset_path <YourPath> --label_path <YourPath>
 ~~~
 scClassify2 also keep the hierarchical identification property of scClassify by using HOPACK tree, details could be found in the folder "code_with_HOPACK".
 
-### try with demo data
+### 1.try with demo data
+If you want to have a quick experience of scClassify2 traning, then directly use this:
+~~~shell
+conda activate scclassify2  
+python main.py --trainset_path ./train_set.h5ad --label_path ./label.json 
+~~~
+### 2.try with demo custom data
+If you want to try your own dataset, then you must prepare you dataset first. <br>
+a. Convert your data into H5AD format. The H5AD format is the HDF5 disk representation commonly used to share single-cell datasets. Both R and Python have many packages for users to easily transfer their data into H5AD format. Name the converted file as input.h5ad and copy it into current path (the scClassiy2 folder).<br>
+b. 
+
+
+
 
 
 
