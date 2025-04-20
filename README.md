@@ -62,7 +62,7 @@ conda activate scclassify2
 python main.py --trainset_path ./train_set.h5ad --label_path ./label.json 
 ~~~
 ### 2.try with demo custom data
-If you want to try your own dataset, then you must prepare you dataset first. <br><br>.
+If you want to try your own dataset, then you must prepare you dataset first. <br><br>
 a. Convert your data into H5AD format. The H5AD format is the HDF5 disk representation commonly used to share single-cell datasets. Both R and Python have many packages for users to easily transfer their data into H5AD format. During the process, you must store the cell state lables into "CellState" column. Name the converted file as input.h5ad and copy it into current path (the scClassiy2 folder).<br><br>
 b. Prepare cell state labels as a list and stored it into a JSON file (please check ./label.json file as template). Name the JSON file as input.json and copy it into current path..<br><br>
 The use this:
