@@ -14,11 +14,12 @@ The network architecture is:
 
 ## Table of Contents
 
-* [Installation&Usage](#Installation&Usage)
+* [Installation](#Installation&Usage)
+* [Usage](#Usage)
 * [WebAPP](#WebAPP)
 * [Citation](#Citation)
 
-## Installation&Usage
+## Installation
 
 To correctly use **scClassify2** via your local device, we suggest first create a conda environment by:
 
@@ -39,7 +40,10 @@ pip uninstall h5py
 pip install h5py
 ~~~
 
-Once success, you have the right environment to use scClassify2.  
+Once success, you have the right environment to use scClassify2.
+
+## Usage
+
 Before actual training process, you need to change some paths of input files. You can either go into the main.py file to change arguments in lines
 ~~~
 parser.add_argument('--trainset_path', type=str, default='./train_set.h5ad')
@@ -50,6 +54,10 @@ according to comments of corresponding codes, or directly pass these paths when 
 python main.py --trainset_path <YourPath> --label_path <YourPath>
 ~~~
 scClassify2 also keep the hierarchical identification property of scClassify by using HOPACK tree, details could be found in the folder "code_with_HOPACK".
+
+### try with demo data
+
+
 
 ## WebAPP
 To provide a resource for the scientific community, we developed a user-friendly web server called [scClassify-catalogue](https://shiny.maths.usyd.edu.au/scClassify_catalogue/), offering a comprehensive catalogue of scClassify2 models trained from datasets covering almost 1,000 cell types and 30 tissue types.  
