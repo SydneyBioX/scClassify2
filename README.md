@@ -1,6 +1,7 @@
 # scClassify2
-![](https://github.com/Wenze18/scClassify2/blob/main/scClassify2.png)
-*Figure 1. Overview of the scClassify2 framework for sequential cell state identification*
+| ![](https://github.com/Wenze18/scClassify2/blob/main/scClassify2.png) |
+|:-----------------------------------:|
+| **Figure 1. **  Overview of the scClassify2 framework for sequential cell state identification. |
 
 We proposed scClassify2, a novel framework for adjacent cell state identification with a transferable model across platforms with three key innovations:  
 
