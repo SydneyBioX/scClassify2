@@ -1,5 +1,6 @@
 # scClassify2
 ![](https://github.com/Wenze18/scClassify2/blob/main/scClassify2.png)
+*Figure 1. Overview of the scClassify2 framework for sequential cell state identification*
 
 We proposed scClassify2, a novel framework for adjacent cell state identification with a transferable model across platforms with three key innovations:  
 
@@ -11,6 +12,7 @@ We proposed scClassify2, a novel framework for adjacent cell state identificatio
 
 The network architecture is:
 ![](https://github.com/Wenze18/scClassify2/blob/main/network_architecture.png)
+*Figure 2. The network architecture of scClassify2 *
 
 ## Table of Contents
 
@@ -77,6 +79,7 @@ To provide a resource for the scientific community, we developed a user-friendly
 scClassify-catalogue directly delivers annotation results for the selected tissue within a relatively short time. The input of scClassify-catalogue is flexible and allows either the direct output from 10x cellranger software, or a csv file or h5ad file containing the gene expression matrix. Once the job is submitted, a job ID will be made available. A file containing the predicted outcome as well as an HTML file will be emailed to the email address entered by the user once the job finishes. The HTML file visualises the predicted cell type such that the user can easily check the prediction result.   
 
 ![](https://github.com/Wenze18/scClassify2/blob/main/Server.png)
+*Figure 2. Overview of scClassify-catalogue - the web server *
 
 ## Citation
 
